@@ -403,6 +403,11 @@ Sammenlign originalen og WebP-versionen i browseren.
 
 Hvis kvaliteten ikke er tilfredsstillende, skal du eksportere billedet igen med en højere kvalitetsindstilling.
 
+## Sammenligning og ændring
+Banner.webo var blevet dårligere kvalitet, så jeg ændringede og lavede en ny webp, som var i bedre kvailitet, ved at jeg tog det gamle billede med de orginale dimensioner.
+
+Ellers var kvaliteten fin på de andre billeder.
+
 ---
 
 # Opgave 4 – Opdatér billedreferencer og brug lazy loading med omtanke
