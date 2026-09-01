@@ -671,6 +671,99 @@ games.html
 contact.html
 ```
 
+<br>
+
+## Ændringer
+
+Generalt for alle siderne ændrede jeg logo, som var en h1 til:
+```html
+<header>
+    <a href="index.html" class="logo">Marioclub</a>
+</header>
+``` 
+da det mere er en branding end en overskrift.
+
+Og så ændrede jeg selfølgelig også stylingen i css, så den blevet stylet rigtigt og ikke kaldte på den gamle h1 tag.
+
+### index.html
+#### Struktur før
+```text
+h1 Mario club
+├── h2 Welcome to Marioclub
+├── h2 It's a me, Mario
+└── h2 Join Today!
+```
+
+#### Struktur efter
+```text
+h1 Welcome to Marioclub
+├── h2 It's a me, Mario
+└── h2 Join Today!
+```
+
+
+<br>
+
+### news.html
+#### Struktur før
+```text
+h1 Mario club
+├── h2 MarioclubNews
+├── h2 Celebrate Mario's 35th Anniversary With These Adhesive Products From UHU
+├── h2 Nintendo Tweaks Mario's Nipples
+├── h2 Where To Buy The Totally Adorable LEGO Super Mario Sets
+└── h2 Join Today!
+```
+
+
+#### Struktur efter
+```text
+h1 MarioclubNews
+├── h2 Celebrate Mario's 35th Anniversary With These Adhesive Products From UHU
+├── h2 Nintendo Tweaks Mario's Nipples
+├── h2 Where To Buy The Totally Adorable LEGO Super Mario Sets
+└── h2 Join Today!
+```
+
+
+<br>
+
+### games.html
+#### Struktur før
+```text
+h1 Mario club
+├── h2 MarioclubGames
+├── h2 It's a me, Mario
+└── h2 Join Today!
+```
+
+
+#### Struktur efter
+```text
+h1 MarioclubGames
+├── h2 It's a me, Mario
+└── h2 Join Today!
+```
+
+
+
+<br>
+
+
+### contact.html
+#### Struktur før
+h1 Mario club
+├── h2 Get in Touchwith Marioclub
+├── h2 Get in touch with me, Mario
+└── h2 Contact Us today!
+
+#### Struktur efter
+h1 Get in Touchwith Marioclub
+├── h2 Get in touch with me, Mario
+└── h2 Contact Us today!
+
+<br>
+
 ---
 
 # Opgave 7 – Markér den aktuelle side i navigationen
