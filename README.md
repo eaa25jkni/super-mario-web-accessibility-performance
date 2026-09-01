@@ -548,6 +548,21 @@ Eksemplet ovenfor er kun et eksempel. Du skal selv skrive en alt-tekst, der pass
 
 Du skal selv kunne forklare, hvorfor du har valgt den enkelte alt-tekst.
 
+## Ændringer
+Jeg har vurderet, at på siderne index, news og contact at billederne thumb-1.webp og thumb-2.webp er dekorative billeder, da de ikke har nogen sammenhæng med indholdet på siden. 
+
+Passende alt-antributter blev tilføjet til siden games.html, da alle billederne var relevante for indholdet, og skal derfor have en passende alt-antribut.
+
+```html
+<li class="coverimage"><img src="img/thumb-1.webp" alt="Mario rider på youshi gennem bane og samler penge" loading="lazy"></li>
+            <li class="coverimage"><img src="img/thumb-2.webp" alt="Mario swømmer uden om farlige forhindringer" loading="lazy"></li>
+            <li class="coverimage"><img src="img/thumb-3.webp" alt="Super Mario spil med glad mario og logo" loading="lazy"></li>
+            <li class="coverimage"><img src="img/thumb-4.webp" alt="Mario, Lugi, Princess Peach løber gennem verden" loading="lazy"></li>
+            <li class="coverimage"><img src="img/thumb-5.webp" alt="Mario og Lugi fikser og bygger bane op, som er fyldt med figurer fra Supermario univers" loading="lazy"></li>
+            <li class="coverimage"><img src="img/thumb-6.webp" alt="Mario sidder i racer bil i front, hvor lugi og co. er bag ham i andre biler" loading="lazy"></li>
+        
+```
+
 ---
 
 # Opgave 6 – Undersøg sidernes headingstruktur med HeadingsMap
