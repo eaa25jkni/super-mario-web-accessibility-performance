@@ -486,6 +486,15 @@ Thumbnail eller andet billede længere nede
 
 Browseren kan prioritere de vigtigste ressourcer først og udsætte billeder, som brugeren endnu ikke kan se.
 
+
+## Ændringer
+Jeg tilføjede 
+```html
+lazy="loading"
+```
+På alle img elementer, som lå under skærmen viewpoint. Altså alle billeder undtagen banner, da det er det første man ser, når man går ind på en side. Nu ved browseren hvad den skal prioritere først.
+
+
 ---
 
 # Opgave 5 – Gennemgå billedernes alt-tekster
