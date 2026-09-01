@@ -298,6 +298,23 @@ Derefter ændres HTML:
 
 HTML-koden peger nu på den faktiske optimerede billedfil.
 
+
+## Notater
+
+| Billede                            | Format | Dimensioner | Filstørrelse | Relevant at optimere? |
+| ---------------------------------- | ------ | ----------: | -----------: | --------------------- |
+| `banner.jpg`       |    JPEG    |      1929 × 919       |      1,8 mb        |          Ja filen fylder meget             |
+| `drmario.jpg`       |    JPEG    |      1200 × 900       |      407 kB        |          Ja             |
+| `facicon.ico`       |    ico    |      16 × 16       |      1 kB        |          Nej             |
+| `thumb-1.jpg`       |    JPEG    |      640 × 360       |      233 kB        |          Ja             |
+| `thumb-2.jpg`       |    JPEG    |      642 × 361       |      335 kB        |          Ja             |
+| `thumb-3.jpg`       |    JPEG    |      1296 × 730       |      246 kB        |          Ja             |
+| `thumb-4.jpg`       |    JPEG    |      1920 × 1080       |      313 kB        |          Ja             |
+| `thumb-5.jpg`       |    JPEG    |      1440 × 841       |      180 kB        |          Ja             |
+| `thumb-6.jpg`       |    JPEG    |      1200 × 675       |      124 kB        |          Ja             |
+
+
+
 ---
 
 ## Programmer til WebP-konvertering
@@ -339,6 +356,13 @@ er det tilstrækkeligt til denne øvelse.
 ImageMagick er et mere avanceret værktøj, som blandt andet kan konvertere, ændre størrelse på, beskære og optimere billeder.
 
 Det er **ikke et krav** at bruge ImageMagick i denne opgave.
+
+<br>
+
+## Ændringer
+Jeg har først skaleret alle billederne ned til passende størrelser. Derefter har jeg brugt https://www.freeconvert.com/jpg-to-webp/download til at konvertere dem til webp.
+
+Så har jeg derefter ændret html, så de kalder på de rigtige img filer.
 
 ---
 
@@ -1257,10 +1281,10 @@ Du kan eksempelvis bruge denne tabel:
 
 | Side | Performance før | Performance efter | Accessibility efter |
 |---|---:|---:|---:|
-| `index.html` |  |  |  |
-| `news.html` |  |  |  |
-| `games.html` |  |  |  |
-| `contact.html` |  |  |  |
+| `index.html` | 57 |  |  |
+| `news.html` | 56 |  |  |
+| `games.html` | 57 |  |  |
+| `contact.html` | 57 |  |  |
 
 Skriv derefter kort:
 
@@ -1277,11 +1301,11 @@ Skriv derefter kort:
 
 Inden du afslutter opgaven, skal du kontrollere:
 
-- [ ] Lighthouse er kørt før ændringerne.
-- [ ] Performance-resultaterne før optimering er dokumenteret.
-- [ ] Relevante billeder er konverteret til WebP.
-- [ ] HTML-filerne anvender de nye WebP-filer.
-- [ ] Billedkvaliteten er kontrolleret.
+- [x] Lighthouse er kørt før ændringerne.
+- [x] Performance-resultaterne før optimering er dokumenteret.
+- [x] Relevante billeder er konverteret til WebP.
+- [x] HTML-filerne anvender de nye WebP-filer.
+- [] Billedkvaliteten er kontrolleret.
 - [ ] Relevante billeder længere nede på siden bruger `loading="lazy"`.
 - [ ] Vigtige billeder øverst på siden er ikke lazy-loadet uden grund.
 - [ ] Alt-teksterne er gennemgået.
