@@ -30,11 +30,36 @@
     <main>
         <article>
             <h2>Get in touch with me, Mario</h2>
-            <form>
-                <input type="text" name="fname" placeholder="Type Firstname" required>
-                <input type="text" name="lname" placeholder="Type Lastname" required><br />
-                <input type="email" name="mail" placeholder="Type Email" required>
-                <input list="countries" name="country" id="country">
+            <form class="form-contact">
+                <label for="firstname">First name</label>
+                <input
+                    type="text" id="firstname" name="fname" autocomplete="given-name" required
+                >
+
+                <label for="lastname">Last name</label>
+                <input
+                    type="text" id="lastname" name="lname" autocomplete="family-name" required
+                >
+
+        <br/>
+                <label for="email">Email address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="name@example.com"
+                    required
+                >
+
+                
+                <label for="country">Country</label>
+                <input
+                    list="countries"
+                    name="country"
+                    id="country"
+                    autocomplete="country-name"
+                >
                 <datalist id="countries">
                     <option value="Albania">
                     <option value="Austria">
@@ -70,9 +95,17 @@
                     <option value="Ukraine">
                     <option value="United Kingdom">
                 </datalist>
+
                 <br />
-                <textarea name="question" rows="4" cols="40" placeholder="Ask a question...">Ask a question</textarea>
-                <input type="submit" value="Get in Touch">
+
+                <label for="question">Your question</label>
+                <textarea rows="4" cols="40"
+                    id="question"
+                    name="question"
+                    placeholder="Ask a question..."
+                ></textarea>
+                
+                <button class="submit-knap" type="submit">Get in Touch</button>
             </form>
         </article>
         <ul class="images">
@@ -83,8 +116,19 @@
     <section class="join">
         <h2>Contact Us today!</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis dignissimos minus voluptatem.</p>
-        <form>
-            <input type="email" name="email" placeholder="Type email & hit enter" required>
+        <form class="form-email">
+            <label for="email">Email address</label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                placeholder="name@example.com"
+                required
+            >
+
+            <button type="submit">Join the club</button>
         </form>
 
     </section>

@@ -40,8 +40,20 @@
     <section class="join">
         <h2>Join Today!</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis dignissimos minus voluptatem.</p>
-        <form>
-            <input type="email" name="email" placeholder="Type email & hit enter" required>
+        
+        <form class="form-email">
+            <label for="email">Email address</label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                placeholder="name@example.com"
+                required
+            >
+
+            <button type="submit">Join the club</button>
         </form>
     </section>
     <footer>
@@ -50,12 +62,3 @@
 </body>
 
 </html>
-
-<ol>
-    <li></li>
-</ol>
-
-<ul>
-    <li></li>
-</ul>
-
