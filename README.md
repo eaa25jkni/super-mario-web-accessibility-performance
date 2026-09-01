@@ -218,6 +218,28 @@ Hvis du optimerer først, har du ingen baseline at sammenligne med. Du kan derfo
 
 Du får en tydelig før/efter-måling og kan se, hvilke ændringer der faktisk forbedrer performance.
 
+
+## Lighthouse analyse performance score
+
+### Forside
+Forsiden på hjemmeside har en score på 57
+
+![Perfomance score på 57](/readimg/opg1-lighthouseperformance.png "Perfomance score på 57.")
+
+### News
+New side  har en score på 56
+![Perfomance score på 56](/readimg/opg1-news.png "Perfomance score på 56.")
+
+### Games
+New side  har en score på 57
+![Perfomance score på 57](/readimg/opg1-games.png "Perfomance score på 57.")
+
+
+### Contact
+New side  har en score på 57
+![Perfomance score på 57](/readimg/opg1-contact.png "Perfomance score på 57.")
+
+
 ---
 
 # Opgave 2 – Optimér billeder og konvertér til WebP
