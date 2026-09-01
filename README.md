@@ -806,6 +806,16 @@ Der må kun være én aktuel side i denne navigation ad gangen.
 
 > Brug native semantisk HTML først. Tilføj ARIA, når der er et konkret behov.
 
+## Ændringer
+Jeg har tilføjet aria-current="page" til det aktive link på hver af siderne. 
+
+Eks.
+```html
+<a href="index.html" class="join" aria-current="page">Join the club</a>
+```
+
+Så nu kan eks. screenreaders fortælle brugeren, den markede/aktive link i nav.
+
 ---
 
 # Opgave 8 – Gør formularerne tilgængelige
