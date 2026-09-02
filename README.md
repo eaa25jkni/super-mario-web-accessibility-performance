@@ -1541,6 +1541,20 @@ og
 noget der kræver menneskelig vurdering
 ```
 
+### Ændringer
+
+Fejlen som jeg fandt i opg 10.1, var at to links med samme href, stod for tæt på hinanden. Man kan godt fikse det ved at lave href stien i fx. logo til href="/". dog vil jeg mene det ikke er god pratice. Derfor har jeg valgt faktisk at beholde. 
+
+```html
+<a href="index.html" class="logo">Marioclub</a>
+```
+og 
+```html
+<li><a href="index.html">Join the club</a></li>
+```
+
+som de er, selvom de har samme href og ligger tæt på hinanden.
+
 ---
 
 ## 10.5 – Test også med tastatur
