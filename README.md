@@ -1489,6 +1489,38 @@ Hvis WAVE finder en kontrastfejl:
 
 Du skal ikke ændre farver tilfældigt. Brug værktøjets information til at finde den konkrete CSS-regel, der giver problemet.
 
+### Ændringer
+
+I opg. 10.1, fandt jeg problemerne med farvekontrasterne på alle siderne.
+
+#### Banner
+Den hvide tekst oven på den gule baggrund har en for lav kontrast.
+
+Problmet fikes ved at ved at ændre overskriftens farve til sort.
+Det gør jeg med css og ændre det til.
+```css
+.banner .welcome{
+  background:#FEB614;
+  color: black;
+ ...
+} 
+```
+
+#### Footer
+Den hvide tekst oven på den røde baggrund har en for lav kontrast.
+
+Problmet fikes ved at ved at ændre baggrundfarven til en lidt mørkere rød farve. Dog i samme stil, så brandidentiten forbliver den samme.
+
+vi ændre den fra #F63232 til:
+
+```css
+footer{
+  background: #E71313;
+  color: white;
+ ...
+}
+```
+
 ---
 
 ## 10.4 – Undersøg Alerts

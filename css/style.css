@@ -7,7 +7,7 @@ p{
   font-size: 18px;
 }
 header{
-  background-color: #F63232;
+  background-color: #E71313;
   padding: 20px 0;
   text-align: center;
   position: fixed;
@@ -34,13 +34,16 @@ header{
 }
 .banner .welcome{
   background:#FEB614;
-  color: white;
+  color: black;
+  
   padding: 30px;
   font-size: 60px;
   position: absolute;
   left: 0;
   top: 30%;
 } 
+
+
 .banner .welcome span{
   font-size: 0.9em;
 }
@@ -71,7 +74,7 @@ nav li a:hover{
   text-decoration: underline;
 }
 nav li a.join{
-  color: #F63232;
+  color: #E71313;
 }
 main{
   max-width: 100%;
@@ -82,7 +85,7 @@ main{
   box-sizing: border-box;
 }
 article h2{
-  color: #F63232;
+  color: #E71313;
   font-size: 48px;
 }
 article p{
@@ -146,6 +149,14 @@ section.join h2{
   font-size: 36px;
 }
 
+.send-knap {
+  max-width: 39rem;
+    background-color: red;
+    font-size: 24px;
+    color: ghostwhite;
+    border-radius: 28px;
+}
+
 .form-email {
   display: flex;
   flex-direction: column;
@@ -193,18 +204,20 @@ form input:valid{
 
 
 .submit-knap {
-    width: 39rem;
+    max-width: 39rem;
     background-color: red;
     font-size: xx-large;
     color: ghostwhite;
     border-radius: 28px;
+
+    
 }
 .submit-knap:focus {
     border: 4px dashed ghostwhite;
     outline: none
 }
 footer{
-  background: #F63232;
+  background: #E71313;
   color: white;
   padding: 10px;
   text-align: center;
