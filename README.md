@@ -1354,6 +1354,7 @@ Automatiske værktøjer kan finde mange accessibility-problemer, men ikke alle.
 
 Du skal derfor kombinere **WAVE Evaluation Tool** med manuel tastaturtest.
 
+
 ---
 
 ## 10.1 – Test alle sider med WAVE
@@ -1392,6 +1393,44 @@ Undersøg først:
 
 > WAVE er et analyseværktøj – ikke en automatisk facitliste.
 
+## Undersøgelse
+
+### index.html
+![Wave test af index.html.](/readimg/opg10-1aindex.png "Wave test af index.html.")
+
+### news.html
+![Wave test af news.html.](/readimg/opg10-1anews.png "Wave test af news.html.")
+
+### games.html
+![Wave test af games.html.](/readimg/opg10-1agames.png "Wave test af games.html.")
+
+
+### contact.html
+![Wave test af contact.html.](/readimg/opg10-1acontact.png "Wave test af contact.html.")
+
+Contact har også 2 problemer, som ikke finde på de andre sider. Der er nemling to form tags som har den samme id.
+```html
+id="email"
+```
+
+Det skal fikses.
+
+
+## Gernerelle fund
+Generalt for alle side var der samme problemer. Det var bla. 
+
+### Farvekontrast
+De helt store problemer er farvekontrast. 
+Det var bla. i vores banner i main. Der er den hvide skrift og gule baggrund en for lav kontrast. 
+
+Der er også en for lav farvekontrast i footeren med den hvide tekst ovenpå den røde.
+
+Begge ting kræver en løsning, men det er heldigvis meget simpelt. Det er bare at gå ind i css og ændre farverne.
+
+### link
+Den kommer med en alert om linket til logoet og linket til 'join the club' i nav. Problemet er de ligger tæt på hinanden, men de klader på det samme med href.
+
+
 ---
 
 ## 10.2 – Undersøg Errors
@@ -1408,6 +1447,15 @@ Language missing or invalid
 Brug WAVE til at lokalisere det konkrete element, og undersøg derefter HTML-koden i VS Code.
 
 Når du har rettet problemet, skal du køre WAVE igen.
+
+
+## Undersøgelse
+
+### index.html
+### news.html
+### games.html
+### contact.html
+
 
 ---
 
@@ -1551,24 +1599,24 @@ Inden du afslutter opgaven, skal du kontrollere:
 - [x] Performance-resultaterne før optimering er dokumenteret.
 - [x] Relevante billeder er konverteret til WebP.
 - [x] HTML-filerne anvender de nye WebP-filer.
-- [] Billedkvaliteten er kontrolleret.
-- [ ] Relevante billeder længere nede på siden bruger `loading="lazy"`.
-- [ ] Vigtige billeder øverst på siden er ikke lazy-loadet uden grund.
-- [ ] Alt-teksterne er gennemgået.
-- [ ] Dekorative billeder er vurderet i forhold til `alt=""`.
-- [ ] Headingstrukturen er kontrolleret med HeadingsMap både før og efter ændringer.
-- [ ] Den aktuelle navigationsside anvender `aria-current="page"`.
-- [ ] Formularfelter har relevante labels.
-- [ ] `for` og `id` matcher.
-- [ ] `textarea` har et label.
-- [ ] `datalist`-input har et label.
-- [ ] Relevante `autocomplete`-værdier er anvendt.
-- [ ] Formularer har en tydelig submit-handling.
-- [ ] Eksisterende gyldige submit-kontroller er vurderet, før de eventuelt ændres.
-- [ ] Dokumentets tegnsæt er kontrolleret og er korrekt angivet med `<meta charset="utf-8">`.
-- [ ] `<head>` er organiseret i en logisk og læsbar rækkefølge.
-- [ ] Dokumentets primære sprog er angivet med `lang="en"` på `<html>`.
-- [ ] Alle fire sider har en unik og beskrivende `<title>`.
+- [x] Billedkvaliteten er kontrolleret.
+- [x] Relevante billeder længere nede på siden bruger `loading="lazy"`.
+- [x] Vigtige billeder øverst på siden er ikke lazy-loadet uden grund.
+- [x] Alt-teksterne er gennemgået.
+- [x] Dekorative billeder er vurderet i forhold til `alt=""`.
+- [x] Headingstrukturen er kontrolleret med HeadingsMap både før og efter ændringer.
+- [x] Den aktuelle navigationsside anvender `aria-current="page"`.
+- [x] Formularfelter har relevante labels.
+- [x] `for` og `id` matcher.
+- [x] `textarea` har et label.
+- [x] `datalist`-input har et label.
+- [x] Relevante `autocomplete`-værdier er anvendt.
+- [x] Formularer har en tydelig submit-handling.
+- [x] Eksisterende gyldige submit-kontroller er vurderet, før de eventuelt ændres.
+- [x] Dokumentets tegnsæt er kontrolleret og er korrekt angivet med `<meta charset="utf-8">`.
+- [x] `<head>` er organiseret i en logisk og læsbar rækkefølge.
+- [x] Dokumentets primære sprog er angivet med `lang="en"` på `<html>`.
+- [x] Alle fire sider har en unik og beskrivende `<title>`.
 - [ ] CSS er kontrolleret efter ændringer i HTML-strukturen.
 - [ ] Alle fire sider er testet med WAVE.
 - [ ] Relevante WAVE Errors er undersøgt og udbedret.
