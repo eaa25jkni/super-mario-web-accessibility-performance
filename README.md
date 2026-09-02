@@ -1232,6 +1232,120 @@ En beskrivende `<title>` hjælper brugeren med hurtigt at forstå, hvilken side 
 
 Kontrollér og optimér `<title>` på alle fire HTML-sider.
 
+
+## Ændringer
+
+### index.html
+#### lang=""
+Tilføjet lang="en" i 
+```html
+<html lang="en">
+```
+
+#### meta charset
+Jeg har også tilføjet:
+```html
+<meta charset="UTF-8">
+```
+I <head>
+
+#### title
+Jeg har ændret <title>Marioclub</title> til 
+```html
+<title>Marioclub - Home</title>
+```
+
+#### Rækkefølge
+Jeg har optimeret rækkefølgen elementer kommer i fra:
+```html
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Marioclub</title>
+</head>
+```
+til:
+```html
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marioclub - Home</title>
+    
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+```
+
+### news.html
+
+Helt samme procedure har jeg gjort for news side.
+Der endte head med at se således ud:
+```html
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marioclub - News</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+```
+
+
+### games.html
+
+Helt samme procedure har jeg gjort for games side.
+Der endte head med at se således ud:
+```html
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marioclub - Games</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+```
+
+
+### contact.html
+
+Helt samme procedure har jeg gjort for contact side.
+Der endte head med at se således ud:
+```html
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marioclub - Contact</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+```
+
 ---
 
 # Opgave 10 – Test webtilgængelighed med WAVE og tastatur
