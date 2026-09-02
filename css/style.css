@@ -6,6 +6,21 @@ body, ul, li, h1, h2, a{
 p{
   font-size: 18px;
 }
+
+a:focus-visible {
+    outline: 4px dashed #4B4B4B;
+    outline-offset: 6px;
+    color: #000000;
+  
+    }
+
+button:focus-visible {
+    outline: 4px dashed #4B4B4B;
+    outline-offset: 6px;
+    color: #000000;
+    }
+
+
 header{
   background-color: #E71313;
   padding: 20px 0;
@@ -196,10 +211,16 @@ form textarea:focus{
   border: 4px dashed #4B4B4B;
   outline: none;
 }
+
+#country:focus{
+  border: 4px dashed #4B4B4B;
+  outline: none;
+}
+
+
 form input:valid{
   border: 4px solid #000000;
 }
-
 
 
 
@@ -216,6 +237,8 @@ form input:valid{
     border: 4px dashed ghostwhite;
     outline: none
 }
+
+
 footer{
   background: #E71313;
   color: white;

@@ -1595,6 +1595,50 @@ Din opgave er derfor at **teste fokusmarkeringen**, ikke blot at fjerne eller er
 
 Hvis fokus ikke er tydeligt nok, skal du forbedre CSS'en og teste igen.
 
+<br>
+
+### Undersøgelse
+
+Man kan på alle siderne navigere rundt til alle links, formularfelter og submit-knapper. Navigationen er også logisk, den kommer i den rækkefølge som man også ser med øjnene.
+
+Elemenenter er tydelige, men kunne godt være mere tydelige. Specielt logoet bliver lidt utydelig, da den blå marker flugter rundt med farven på den, så det kan godt ligne en stroke.
+
+En anden ting jeg lå mærke til var at alle input fik en stiplet rundt om sig. Det er meget godt. Der var dog et felt, feltet med land, som ikke blev stiplet, det skal fikset.
+
+
+### Ændringer
+
+#### Visible focus styling
+
+Derfor stylede jeg focus til links og knapper, så det blev tydeligere.
+
+```css
+a:focus-visible {
+    outline: 4px dashed #4B4B4B;
+    outline-offset: 6px;
+    color: #000000;
+  
+    }
+
+button:focus-visible {
+    outline: 4px dashed #4B4B4B;
+    outline-offset: 6px;
+    color: #000000;
+    }
+
+```
+
+
+#### Stiplet border på country input
+```css
+#country:focus{
+  border: 4px dashed #4B4B4B;
+  outline: none;
+}
+```
+
+Så hvor inputet til country også en stiplet linje rundt om sig.
+
 ---
 
 # Opgave 11 – Kør Lighthouse igen
