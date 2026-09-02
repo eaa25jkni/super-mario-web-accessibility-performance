@@ -1449,13 +1449,29 @@ Brug WAVE til at lokalisere det konkrete element, og undersøg derefter HTML-kod
 Når du har rettet problemet, skal du køre WAVE igen.
 
 
-## Undersøgelse
+### Ændringer
 
-### index.html
-### news.html
-### games.html
-### contact.html
+Det eneste sted der dukkede errors op i wave testen var på siden contact.html.Der er nemling to form tags som har den samme id.
+```html
+id="email"
+```
 
+### Løsning
+Løsningen på problemet er ved at give dem hver unikke id'er.
+
+Derfor ændrede jeg i den store form for 'Get in touch with me, Mario', der ændrede jeg:
+id.
+```html
+id="email"
+```
+
+til 
+id.
+```html
+id="email-contact"
+```
+
+Så nu har de to former to forskellige id'er.
 
 ---
 
