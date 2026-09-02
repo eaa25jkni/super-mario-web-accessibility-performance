@@ -1671,6 +1671,27 @@ Du skal derfor kombinere Lighthouse med:
 - kontrol af alt-tekster
 - HTML-validering
 
+## Lighthouse test
+
+### index.html
+![Perfomance score på 99](/readimg/opg11-lighthouseperfom.png "Perfomance score på 99.")
+
+![accessibility score på 100](/readimg/opg11-lighthouse.png "accessibility score på 100.")
+
+<br>
+
+### news.html
+![Perfomance score på 100 og accessibility score på 100](/readimg/opg11-news.png "Perfomance score på 100 og accessibility score på 100.")
+<br>
+
+### games.html
+![Perfomance score på 96 og accessibility score på 100](/readimg/opg11-games.png "Perfomance score på 96 og accessibility score på 100.")
+
+<br>
+
+### contact.html
+![Perfomance score på 99 og accessibility score på 100](/readimg/opg11-contact.png "Perfomance score på 99 og accessibility score på 100.")
+
 ---
 
 # Dokumentér dine resultater
@@ -1681,19 +1702,65 @@ Du kan eksempelvis bruge denne tabel:
 
 | Side | Performance før | Performance efter | Accessibility efter |
 |---|---:|---:|---:|
-| `index.html` | 57 |  |  |
-| `news.html` | 56 |  |  |
-| `games.html` | 57 |  |  |
-| `contact.html` | 57 |  |  |
+| `index.html` | 57 | 99 | 100 |
+| `news.html` | 56 | 100 | 100 |
+| `games.html` | 57 | 96 | 100 |
+| `contact.html` | 57 | 99 | 100 |
 
 Skriv derefter kort:
 
 1. Hvilke ændringer gav den største performanceforbedring?
+
+```text
+De ændringer der gav den største ændring var helt klart billedekomprimeringen om konvertering til webp. Den var nemlig på den måde jeg fik reduceret filstørrelser gevaldigt. Og det betyder også at der er mindre data browseren skal hente og loade.
+```
+
+
 2. Hvilke accessibility-problemer fandt du?
+```text
+Der var bla. et problem med farvekontrast flere steder, som jeg fik fikset.
+
+Alt-antributter på <img>. Der var flere billeder, som ikke havde en alt-tekst eller havde en alt-tekst, som var intetsigende for indholdet.
+
+Der manglede blandt andet også en lang antribut på html elementet, som jeg fik sat til <html lang="en">
+
+Der var også mange problemer med sidens form, som ikke var korrekt strukturet.
+
+
+```
+
 3. Hvilke problemer kunne Lighthouse finde?
+```text
+Lighthouse fandt problemerne med de alt for store billedefiler, som påvirkede performance gevaldigt. Den kunne også finde problemer med faste width og height på billeder og elementer.
+
+Den fandt også problemer med farvekontrast og lang=""
+```
+
+
 4. Hvilke problemer fandt WAVE?
-5. Hvilke problemer krævede HeadingsMap eller manuel kontrol?
+```text
+Wave fandt problemer med 
+- farvekontrast i banner og footer.
+- to links der stor for tæt.
+- To forms der kalder på samme id.
+```
+
+
+5. Hvilke problemer krævede HeadingsMap eller manuel 
+kontrol?
+
+```text
+Headingmap brugte jeg til at undersøge sidernes headingstruktur. Her blev det meget tydeligt at strukturen ikke fungerede, og at en som bruger screenreader ville blive forvirret. h1 var nemlig logoet, og det er nemlig et problem, fordi den ikke beskriver sidens formål og emne. Derfor blev h1 i logoet fjernet, og h2 i banner blev lavet om til en h1. 
+```
+
+
 6. Hvad har du lært om sammenhængen mellem performance og accessibility?
+
+```text
+Undervejs blev det meget tydeligt at performance og accessibility hænger meget sammen. For hvis en hjemmeside består af mange tunge billeder, gør det hjemmesiden langsom. Og det påvirker jo også tilgængdeligheden og oplevelse for brugeren. 
+
+Også med ændringen af semantisk html blev det tydeligt at de hænger sammen. For med korrekt semantisk html prøver man, at gøre det nemt for f.eks blinde med screenreaders at navigere rundt i indholdet på den nemmest mulige måde. Men semantisk html påvirker også performance, da browseren nemmere kan forstår sidens struktur og dermed behandle det korrekt.
+```
 
 ---
 
@@ -1723,17 +1790,17 @@ Inden du afslutter opgaven, skal du kontrollere:
 - [x] `<head>` er organiseret i en logisk og læsbar rækkefølge.
 - [x] Dokumentets primære sprog er angivet med `lang="en"` på `<html>`.
 - [x] Alle fire sider har en unik og beskrivende `<title>`.
-- [ ] CSS er kontrolleret efter ændringer i HTML-strukturen.
-- [ ] Alle fire sider er testet med WAVE.
-- [ ] Relevante WAVE Errors er undersøgt og udbedret.
-- [ ] WAVE Contrast Errors er undersøgt og udbedret, hvor det var nødvendigt.
-- [ ] WAVE Alerts er undersøgt og vurderet.
-- [ ] Alle interaktive elementer har en tydelig synlig fokusmarkering.
-- [ ] Siderne er testet med tastatur.
-- [ ] HTML-koden er valideret.
-- [ ] Lighthouse er kørt igen efter optimering.
-- [ ] Performance-score er 90 eller højere.
-- [ ] Resultater før og efter er sammenlignet.
+- [x] CSS er kontrolleret efter ændringer i HTML-strukturen.
+- [x] Alle fire sider er testet med WAVE.
+- [x] Relevante WAVE Errors er undersøgt og udbedret.
+- [x] WAVE Contrast Errors er undersøgt og udbedret, hvor det var nødvendigt.
+- [x] WAVE Alerts er undersøgt og vurderet.
+- [x] Alle interaktive elementer har en tydelig synlig fokusmarkering.
+- [x] Siderne er testet med tastatur.
+- [x] HTML-koden er valideret.
+- [x] Lighthouse er kørt igen efter optimering.
+- [x] Performance-score er 90 eller højere.
+- [x] Resultater før og efter er sammenlignet.
 
 ---
 

@@ -62,6 +62,7 @@ header{
 .banner .welcome span{
   font-size: 0.9em;
 }
+
 nav{
   background: #F4F4F4;
   padding: 20px;
@@ -89,8 +90,10 @@ nav li a:hover{
   text-decoration: underline;
 }
 nav li a.join{
-  color: #E71313;
+  color: #cf1515;
 }
+
+
 main{
   max-width: 100%;
   width: 1200px;
